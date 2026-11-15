@@ -1,0 +1,319 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255, 255, 255, 0.55),
+            rgba(255, 255, 255, 0.55)
+        ),
+
+        url("image/background.jpg");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 25px 8%;
+
+    background-color: rgba(255, 255, 255, 0.85);
+
+}
+
+
+nav h2 {
+
+    color: #e85d04;
+
+    font-size: 28px;
+
+}
+
+
+ul {
+
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+
+}
+
+
+li {
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+li:hover {
+
+    color: #e85d04;
+
+}
+
+
+.icons {
+
+    display: flex;
+
+    gap: 20px;
+
+    font-size: 20px;
+
+}
+
+
+.icons i {
+
+    cursor: pointer;
+
+}
+
+
+.icons i:hover {
+
+    color: #e85d04;
+
+}
+
+
+main {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 70px 8%;
+
+    min-height: 65vh;
+
+}
+
+
+.text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+.text p {
+
+    color: #e85d04;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+.text h1 {
+
+    font-size: 60px;
+
+    color: #333;
+
+}
+
+
+.text h3 {
+
+    font-size: 22px;
+
+    color: #555;
+
+}
+
+
+button {
+
+    width: 170px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #e85d04;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #c74600;
+
+}
+
+
+#mainImage {
+
+    width: 450px;
+
+    height: 450px;
+
+    background-image: url("image/Pizza.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    border-radius: 50%;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    transition: 0.5s;
+
+}
+
+
+.foods {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding-bottom: 30px;
+
+}
+
+
+.foods img {
+
+    width: 100px;
+
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    border: 4px solid white;
+
+    transition: 0.3s;
+
+}
+
+
+.foods img:hover {
+
+    transform: scale(1.1);
+
+    border-color: #e85d04;
+
+}
+
+
+@media (max-width: 768px) {
+
+
+    ul {
+
+        display: none;
+
+    }
+
+
+    main {
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        text-align: center;
+
+    }
+
+
+    .text {
+
+        align-items: center;
+
+    }
+
+
+    .text h1 {
+
+        font-size: 45px;
+
+    }
+
+
+    #mainImage {
+
+        width: 300px;
+
+        height: 300px;
+
+    }
+
+
+    .foods {
+
+        gap: 10px;
+
+    }
+
+
+    .foods img {
+
+        width: 70px;
+
+        height: 70px;
+
+    }
+
+}

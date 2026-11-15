@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Sunshine Cafe</title>
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+
+    <nav>
+
+        <h2>Sunshine Cafe</h2>
+
+
+        <ul>
+
+            <li>Home</li>
+
+            <li>Menu</li>
+
+            <li>About</li>
+
+            <li>Location</li>
+
+            <li>Contact</li>
+
+        </ul>
+
+
+        <div class="icons">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+
+
+    <main>
+
+
+        <div class="text">
+
+            <p>Are You Hungry?</p>
+
+            <h1>Don't Wait</h1>
+
+            <h3>
+                Let's start to order food now
+            </h3>
+
+            <button>
+                Checkout Menu
+            </button>
+
+        </div>
+
+
+
+        <div id="mainImage"></div>
+
+    </main>
+
+
+
+    <div class="foods">
+
+
+        <img src="image/Pizza.jpg"
+            onclick="changeImage('image/Pizza.jpg')">
+
+
+        <img src="image/burger.jpg"
+            onclick="changeImage('image/burger.jpg')">
+
+
+        <img src="image/French.jpg"
+            onclick="changeImage('image/French.jpg')">
+
+
+        <img src="image/KFC.jpg"
+            onclick="changeImage('image/KFC.jpg')">
+
+    </div>
+
+
+
+    <script>
+
+        function changeImage(imageName) {
+
+            document.getElementById("mainImage")
+                .style.backgroundImage =
+                "url('" + imageName + "')";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
